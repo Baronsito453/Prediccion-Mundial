@@ -2,7 +2,7 @@ from flask import Flask, render_template, jsonify
 import requests
 import time
 
-# CORRECCIÓN AQUÍ: Le indicamos a Flask que busque los archivos en la raíz actual, sin carpetas.
+# CORRECCIÓN: Indicamos que busque index.html en la raíz actual, sin carpetas.
 app = Flask(__name__, template_folder='.')
 
 HEADERS = {
