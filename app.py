@@ -2,7 +2,8 @@ from flask import Flask, render_template, jsonify
 import requests
 import time
 
-app = Flask(__name__)
+# CORRECCIÓN AQUÍ: Le indicamos a Flask que busque los archivos en la raíz actual, sin carpetas.
+app = Flask(__name__, template_folder='.')
 
 HEADERS = {
     'x-apisports-key': '81b9ca7a3d5f0c9bd24e3e2fa0d89c75',
