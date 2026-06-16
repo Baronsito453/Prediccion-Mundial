@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Predicciones de Futbol</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+
+<h1>⚽ Predicciones de Partidos</h1>
+
+<button id="generar">
+    Cargar Predicciones
+</button>
+
+<table>
+
+    <thead>
+        <tr>
+            <th>Local</th>
+            <th>Visitante</th>
+            <th>Liga</th>
+            <th>Predicción</th>
+            <th>Resultado</th>
+        </tr>
+    </thead>
+
+    <tbody id="resultado">
+
+    </tbody>
+
+</table>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
